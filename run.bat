@@ -1,0 +1,6 @@
+@echo off
+echo Starting AudAlign Frontend in new terminal...
+start "Frontend" cmd /k "cd Audalign && npm run start"
+
+echo Starting AudAlign Backend in new terminal...
+start "Backend" cmd /k "cd Audalign_Backend && venv\Scripts\activate && python app.py"

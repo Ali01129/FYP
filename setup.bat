@@ -1,0 +1,6 @@
+@echo off
+echo Starting AudAlign Frontend setup in new terminal...
+start "Frontend" cmd /c "cd Audalign && npm install"
+
+echo Starting AudAlign Backend setup in new terminal...
+start "Backend" cmd /c "cd Audalign_Backend && python -m venv venv && venv\Scripts\activate && pip install -r requirements.txt"
